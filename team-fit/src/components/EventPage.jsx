@@ -6,6 +6,11 @@ export default function EventPage() {
   const [eventData, setEventData] = useState(null);
 
   useEffect(() => {
+    //Set up event data first
+    //then add creation of data in database. 
+    //Then add the ability to open an event
+    //then time dragger
+    //Then team functionality
     async function fetchEventData() {
       const response = await fetch(`/api/events/${eventId}`);
       const data = await response.json();

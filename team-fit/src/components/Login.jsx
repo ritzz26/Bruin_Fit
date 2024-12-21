@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import {app } from '../firebase';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
-    console.log(process.env.REACT_APP_API_KEY)
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const auth = getAuth(app);
@@ -12,7 +12,7 @@ export default function Login() {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      alert('Logged in successfully');
+      //link to event page
     } catch (error) {
       alert(error.message);
     }

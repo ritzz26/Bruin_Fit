@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
+  apiKey: "AIzaSyDdlFCBHIFNo_TD_pNJvXWpY1czaRU-EC4",
   authDomain: "bruin-fit.firebaseapp.com",
   databaseURL: "https://bruin-fit-default-rtdb.firebaseio.com",
   projectId: "bruin-fit",
